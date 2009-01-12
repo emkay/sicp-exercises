@@ -1,1 +1,19 @@
-Collection of SICP exercises in Scheme. 
+This is a collection of the SICP solutions in Scheme.
+
+The book can be found online here:
+http://mitpress.mit.edu/sicp/.
+
+The lectures are downloadable from iTunes. 
+
+File Structure/Naming Convention
+I would like to keep all the solutions ordered by chapterN and solution files named ex-chapter-exercise.ss. Using this
+convention exercise 4 in chapter 1 would be placed in chapter1/ex-1-4.ss.
+
+Requests for participation
+It is almost certain that there will be a problem/bug with some of the solutions. There are most certainly also other
+ways of doing the exercises. If you want to fix a bug please fork and fix the bug ridden file and request for a pull. 
+If you want to add an alternative answer please leave the other solutions and add yours either to the bottom of the file 
+with some comment saying it is an alternative or create another file that denotes it as an alternative solution.
+
+For example, if you wanted to add an alternative solution to exercise 1.12 add a file ex-1-12-alternative1.ss.
+
