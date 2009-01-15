@@ -1,6 +1,7 @@
 ; the tree drawing is in both pdf and odg format. 
 ; ex-1-14-tree.odg
 ; ex-1-14-tree.pdf
+; I think that the order of growth for number of steps is Theta(n^c) where n is the amount and c is the kinds-of-coins and for space Theta(n).
 
 (define (count-change amount)
   (cc amount 5))
