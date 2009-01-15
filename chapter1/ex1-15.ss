@@ -8,7 +8,7 @@
 ;
 ; p gets evaluated 5 times.
 ;
-; b. ?
+; b. order of growth for space is Theata(n) and number of steps is Theata(lg n)?
 ;
 (define (cube x) (* x x x))
 
@@ -18,5 +18,3 @@
   (if (not (> (abs angle) 0.1))
 	angle
 	(p (sine (/ angle 3.0)))))
-
-
