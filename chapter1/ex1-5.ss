@@ -4,7 +4,7 @@
 ;
 ; Notes: I see now that I could have simplified 1.3's sum-of-squares-larger-num to use min. It would have made what was going on clearer, but I wrote it using and's first and tested it out. 
 ; It works so I just left it.
-;
+; Edit: someone has brought it to my attention that using < rather than <= will result in undefined if x y z are equal. Fixed now.
 
 (define (square x)
   (* x x))
@@ -13,7 +13,7 @@
   (+ (square x) (square y)))
 
 (define (sum-of-squares-larger-nums x y z)
-  (cond ((and (< x y) (< x z)) (sum-of-squares y z))
-		((and (< y z) (< y x)) (sum-of-squares x z))
-		((and (< z x) (< z y)) (sum-of-squares x y))))
+  (cond ((and (<= x y) (<= x z)) (sum-of-squares y z))
+		((and (<= y z) (<= y x)) (sum-of-squares x z))
+		((and (<= z x) (<= z y)) (sum-of-squares x y))))
 
