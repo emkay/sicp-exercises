@@ -3,7 +3,8 @@ This is a collection of the SICP solutions in Scheme.
 The book can be found online here:
 http://mitpress.mit.edu/sicp/.
 
-The lectures are downloadable from iTunes. 
+The lectures are downloadable here: 
+http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/
 
 File Structure/Naming Convention
 I would like to keep all the solutions ordered by chapterN and solution files named ex-chapter-exercise.ss. Using this
