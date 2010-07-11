@@ -5,10 +5,7 @@
   (/ a 2))
 
 (define (new-* a b)
-  (new-*-iter a b))
-
-(define (new-*-iter a counter)
-  (cond ((= counter 1) a)
-        ((even? counter) 
-         (new-*-iter (double a) (halve counter)))
-        (else (+ a (new-*-iter a (- counter 1))))))
+  (cond ((= b 1) a)
+        ((even? b) 
+         (new-* (double a) (halve b)))
+        (else (+ a (new-* a (- b 1))))))
